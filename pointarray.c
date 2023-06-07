@@ -35,5 +35,28 @@ void main() {
     }
 */
 
+    char *PA[4];
 
+    PA[0] = "first";
+    PA[1] = "second";
+    PA[2] = "third";
+    PA[3] = "fourth";
+
+    for (int i = 0; i < 4; i++) {
+        printf("%s\n", PA[i]);
+    }
+
+    printf("%s\n", PA[0]+4); // PA[0]의 주소값에 4를 더한 주소값을 가르킴
+    
+
+    int c[] = {1, 2, 3, 4, 5};
+    int d[] = {6, 7, 8, 9, 10};
+    int *pa[2];
+    pa[0] = c;
+    pa[1] = d;
+
+    printf("*(pa[0]) = %d\n", *(pa[0])); 
+    printf("*(pa[0]+1) = %d\n", *(pa[0]+1)); // pa[0]의 주소값에 1을 더한 주소값을 가르킴
+    printf("*(pa[1]) = %d\n", *(pa[1])); 
+    printf("*(pa[1]+1) = %d\n", *(pa[1]+1)); // pa[1]의 주소값에 1을 더한 주소값을 가르킴
 }
